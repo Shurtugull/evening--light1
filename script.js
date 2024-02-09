@@ -70,6 +70,19 @@ class Paper {
     window.addEventListener('mouseup', () => {
       this.holdingPaper = false;
       this.rotating = false;
+      // Get total number of papers
+const totalPapers = papers.length;
+
+// Get reference to last paper 
+const lastPaper = papers[totalPapers - 1];
+
+// Update text on last 
+lastPaper.innerText = "PUSH";  
+
+// Attach handler
+lastPaper.addEventListener('click', () => {
+  window.location.assign("https://shurtugull.github.io/evening-wish/"); 
+
     });
   }
 }
