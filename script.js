@@ -96,6 +96,8 @@ lastPaper.append(pushText);
 pushText.addEventListener('click', () => {
   window.location.href = "https://shurtugull.github.io/evening-wish/"; 
 });
+const backgroundMusic = document.getElementById('backgroundMusic');
+backgroundMusic.play();
 
 papers.forEach(paper => {
   const p = new Paper();
