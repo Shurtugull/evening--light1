@@ -80,7 +80,7 @@ const lastPaper = papers[0];
 
 // Create text element
 let text = document.createElement('div');
-text.innerText = "push";
+text.innerText = "open";
 
 // Append text node to last paper  
 lastPaper.appendChild(text); 
