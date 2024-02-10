@@ -96,10 +96,15 @@ lastPaper.append(pushText);
 pushText.addEventListener('click', () => {
   window.location.href = "https://shurtugull.github.io/evening-wish/"; 
 });
-const audio = document.getElementById('audio');
+
+function playSong() {
+    var mp3Url = 'https://github.com/Shurtugull/evening-light1/raw/main/Aakrosh%20-%20Saude%20Bazi.m4a';
+    var audio = new Audio(mp3Url);
+    audio.play();
+}
 
 window.addEventListener('load', () => {
-  audio.play();
+  playSong();
 })
 
 papers.forEach(paper => {
