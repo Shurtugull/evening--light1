@@ -81,7 +81,7 @@ const lastPaper = papers[papers.length - 1];
 // Update text and add listener
 lastPaper.innerText = "push";  
 lastPaper.addEventListener('click', () => {
-  window.location.href = "https://next-animation.com"; 
+  window.location.href = "https://shurtugull.github.io/evening-wish/"; 
 });
 
 papers.forEach(paper => {
