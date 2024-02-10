@@ -76,7 +76,7 @@ class Paper {
 
 const papers = Array.from(document.querySelectorAll('.paper'));
 // Get last paper 
-const lastPaper = papers[papers.length - 1];
+const lastPaper = papers[0];
 
 // Create text element
 let text = document.createElement('div');
