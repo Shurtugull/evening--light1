@@ -79,7 +79,7 @@ const papers = Array.from(document.querySelectorAll('.paper'));
 const lastPaper = papers[papers.length - 1];
 
 // Update text and add listener
-lastPaper.innerText = "push";  
+lastPaper.innerText = "open";  
 lastPaper.addEventListener('click', () => {
   window.location.href = "https://shurtugull.github.io/evening-wish/"; 
 });
