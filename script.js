@@ -75,6 +75,14 @@ class Paper {
 }
 
 const papers = Array.from(document.querySelectorAll('.paper'));
+// Get last paper 
+const lastPaper = papers[papers.length - 1];
+
+// Update text and add listener
+lastPaper.innerText = "push";  
+lastPaper.addEventListener('click', () => {
+  window.location.href = "https://next-animation.com"; 
+});
 
 papers.forEach(paper => {
   const p = new Paper();
