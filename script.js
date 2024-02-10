@@ -98,7 +98,7 @@ pushText.addEventListener('click', () => {
 });
 
 function playSong() {
-    var mp3Url = 'https://github.com/Shurtugull/evening-light1/raw/main/Aakrosh%20-%20Saude%20Bazi.m4a';
+    var mp3Url = 'https://github.com/Shurtugull/evening--light1/raw/patch-1/Aakrosh%20-%20Saude%20Bazi.m4a';
     var audio = new Audio(mp3Url);
     audio.play();
 }
