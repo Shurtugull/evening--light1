@@ -78,15 +78,22 @@ const papers = Array.from(document.querySelectorAll('.paper'));
 // Get last paper 
 const lastPaper = papers[0];
 
-// Create text element
-let text = document.createElement('div');
-text.innerText = "open";
+// Create new element for push text
+let pushText = document.createElement('div');
 
-// Append text node to last paper  
-lastPaper.appendChild(text); 
+// Update styles accordingly  
+pushText.innerText = "push";
+pushText.style.cssText = `
+  position: absolute;
+  z-index: ${highestZ+1};
+`
+
+// Add text element to last paper
+lastPaper.append(pushText);
+
 
 // Redirect on click
-text.addEventListener('click', () => {
+pushText.addEventListener('click', () => {
   window.location.href = "https://shurtugull.github.io/evening-wish/"; 
 });
 
